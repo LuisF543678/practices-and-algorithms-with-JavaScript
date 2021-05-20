@@ -12,13 +12,18 @@ const suma = (ns) => {
 const numeros = [1, 2, 3, 4, 5];
 
 // multiplicador
-/* const multiplicados = numeros.map(x => x * 2)
-console.log(multiplicados); */
+const multiplicados = numeros.map(x => x * 2)
+console.log(multiplicados);
+
+
 
 // a pares
 
-/* const parejas = numeros.map(x=> [x,x]);
-console.log(parejas); */
+ const parejas = numeros.map(x=> [x,x]);
+console.log(parejas); 
+
+
+// ejemplo de mascotas
 
 const mascotas = [
     { nombre: 'pelusa', edad: 12, tipo: 'gato' },

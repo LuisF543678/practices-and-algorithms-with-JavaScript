@@ -1,6 +1,7 @@
 
-// fat arrow function
-// funciones anonimas
+/* Fat arrow function
+*  Funciones anonimas 
+*/
 
 function suma(a, b) {
     return a + b;
@@ -11,8 +12,10 @@ const resultado = suma(1, 5)
 console.log(resultado);
 
 
+/**
+ * tiene return implicito fat
+*/
 
-// tiene return implicito fat
 //const suma = (a,b) => a+b
 const suma = (a, b) => {
     const c = a + b
@@ -20,8 +23,9 @@ const suma = (a, b) => {
 }
 
 
-
-// sintaxis antes
+/**
+ *  Sintaxis del codigo anterio
+ */
 
 const suma = (a, b) => a + b
 

@@ -33,6 +33,7 @@ console.log(parejas);
 
 /**
  *  Ejemplo de mascotas
+ *  Array de mascotas
  */
 
 const mascotas = [

@@ -1,6 +1,7 @@
 
-/* Fat arrow function
-*  Funciones anonimas 
+/* 
+*   Fat arrow function
+*   Funciones anonimas 
 */
 
 function suma(a, b) {
@@ -13,7 +14,7 @@ console.log(resultado);
 
 
 /**
- * tiene return implicito fat
+ *  Tiene return implicito fat
 */
 
 //const suma = (a,b) => a+b

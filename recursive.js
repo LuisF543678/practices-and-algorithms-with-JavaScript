@@ -1,4 +1,7 @@
-/*
+
+/**
+ * Funcion recursiva normal
+ */
 const conteoRegresivo = (a) => {
     if (a < 0) {
         console.log(a)
@@ -8,9 +11,12 @@ const conteoRegresivo = (a) => {
 
 conteoRegresivo(10)
 
-*/
 
-// version 1
+
+/**
+ * Funcion recursiva version 1 con axios
+ */
+
 const axios = require('axios')
 
 const llamdaApi = async (url, llamados = 0) => {
@@ -29,7 +35,10 @@ const llamdaApi = async (url, llamados = 0) => {
 
 llamdaApi('https://jsonplaceholder.typicode.com/users/')
 
-// version 2
+
+/**
+ * Funcion recursiva con axios version 2
+ */
 
 const axios = require('axios')
 

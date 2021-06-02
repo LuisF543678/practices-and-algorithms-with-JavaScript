@@ -29,3 +29,22 @@ const llamdaApi = async (url, llamados = 0) => {
 
 llamdaApi('https://jsonplaceholder.typicode.com/users/')
 
+// version 2
+
+const axios = require('axios')
+
+const llamdaApi = async (url, llamados = 0) => {
+    try {
+        const {data} = await axios.get(url)
+        console.log(data)
+        return result
+    } catch (e) {
+        if (llamados > 5) {
+            return ''
+        }
+        console.log(e)
+        return llamdaApi(url, llamados + 1)
+    }
+}
+
+llamdaApi('https://jsonplaceholder.typicode.com/users/')

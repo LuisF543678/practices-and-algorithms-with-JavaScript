@@ -1,3 +1,7 @@
+
+/**
+ * Agragar funcion trampoline 
+ */
 const trampoline = fn => (...args) => {
     let result  = fn(...args)
     while (typeof result === 'function'){
@@ -6,6 +10,10 @@ const trampoline = fn => (...args) => {
     return result
 }
 
+
+/**
+ * Funcion suma
+ */
 const suma = (number, sum = 0) => (
     number === 0
         ? sum
@@ -14,5 +22,8 @@ const suma = (number, sum = 0) => (
 
 const tsuma = trampoline(suma)
 
+/**
+ * Probar
+ */
 const r = tsuma(1000000);
 console.log(r);

@@ -1,12 +1,17 @@
 const numeros = [1, 3, 5, 7, 9]
 
 
-// foreach() 
-// basic
+/**
+ * Usando foreach()  
+ */ 
+
+// Forma basica
 /* numeros.forEach( x => {
     console.log(x * 5);
 });
  */
+
+
 // en una nueva variable
 const res01 = numeros.forEach( x => x*5)
     console.log(res01);
@@ -18,7 +23,9 @@ const res01 = numeros.forEach( x => x*5)
     console.log(x);
 }) */
 
-// en una variable
+/**
+ * Imprimit en una variable
+ */
 
 const res02 = numeros.map(x => x*5)
     console.log(res02);
@@ -26,7 +33,14 @@ const res02 = numeros.map(x => x*5)
 
 const numeros = Array(20000).fill(5);
 
-//foreach()
+
+/**
+ * Medir el tiempo de respuesta de cada uno
+ */
+
+/**
+ * @method foreach()
+ */ 
 
 console.time('foreach()');
 const res011 = numeros.forEach(x => x * 5);
